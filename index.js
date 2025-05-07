@@ -12,7 +12,7 @@ import { addManyBooks } from "./controllers/book.controllers.js";
 
 const app = express();
 dotenv.config({ path: "./.env" });
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 4000;
 
 initializeDatabase();
 
